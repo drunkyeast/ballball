@@ -596,8 +596,8 @@ class Settings {
         let password = this.$login_password.val();
         this.$login_error_message.empty();
 
-        $.ajax({
-            url: "https://app165.acapp.acwing.com.cn/settings/login/",
+        $.ajax(
+            url: "https://ballball.drunkyeast.top/settings/login/",
             type: "GET",
             data: {
                 username: username,
@@ -622,7 +622,7 @@ class Settings {
         this.$register_error_message.empty();
 
         $.ajax({
-            url: "https://app165.acapp.acwing.com.cn/settings/register/",
+            url: "https://ballball.drunkyeast.top/settings/register/",
             type: "GET",
             data: {
                 username: username,
@@ -644,7 +644,7 @@ class Settings {
         if (this.platform === "ACAPP") return false;
 
         $.ajax({
-            url: "https://app165.acapp.acwing.com.cn/settings/logout/",
+            url: "https://ballball.drunkyeast.top/settings/logout/",
             type: "GET",
             success: function(resp) {
                 console.log(resp);
@@ -669,7 +669,7 @@ class Settings {
         let outer = this;
 
         $.ajax({
-            url: "https://app165.acapp.acwing.com.cn/settings/getinfo/",
+            url: "https://ballball.drunkyeast.top/settings/getinfo/",
             type: "GET",
             data: {
                 platform: outer.platform,
