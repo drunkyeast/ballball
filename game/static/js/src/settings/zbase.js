@@ -142,7 +142,7 @@ class Settings {
         let password = this.$login_password.val();
         this.$login_error_message.empty();
 
-        $.ajax(
+        $.ajax({
             url: "https://ballball.drunkyeast.top/settings/login/",
             type: "GET",
             data: {

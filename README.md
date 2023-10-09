@@ -1,10 +1,3 @@
-# ballball
-
-### 跟着yxc的commit记录在搞一遍
-Day1. 初始化工作和创建第一个网站
-Day2. 创建文件结构,从url到urls.py到index.py到index.html
-
-
-### 问题集
-MIME type有点搞, DEBUG = True就ok了.
-在admin.py创建了后台的一个新的表, 需要makemigrations & migrate, 数据库的表对应django的class
+## 从4.2版本换成了4.0版本
+其实只需要修改setting.py, urls.py和game/admin.py, game/**, 然后makemigrations 和 migrate. 但是有时一点小问题就会卡人, 比如{, 比如urls.py忘记import include等等; 
+所以某次提交改变了很多admin下面的文件
