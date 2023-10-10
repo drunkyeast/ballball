@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 class Player(models.Model):
 	# 在admin.py被引入 
+    test = "nmsl"
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     photo = models.URLField(max_length=256, blank=True)
 
